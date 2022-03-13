@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY ./package*.json /app/
 
-RUN npm config set registry https://registry.npm.taobao.org
+RUN npm config set registry https://registry.npmmirror.com
 RUN yarn install && \
      yarn install --production  && \
      yarn cache clean
